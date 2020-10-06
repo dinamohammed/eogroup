@@ -204,7 +204,7 @@ msgstr "غياب"
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__total_penalties_penalty
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_penalties_penalty
 msgid "Penalty"
-msgstr "جزاء"
+msgstr "تاخير-ايام"
 
 #. module: egymentors_hr
 #: model:hr.bonus.penalty.type,name:egymentors_hr.penalty_other
