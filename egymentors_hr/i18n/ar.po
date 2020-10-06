@@ -1333,7 +1333,7 @@ msgstr "خطأ في استلام رسائل الجوال"
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__total_penalties_sick
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_penalties_sick
 msgid "Sick"
-msgstr "مرضي"
+msgstr "غياب2"
 
 #. module: egymentors_hr
 #: code:addons/egymentors_hr/models/hr_bonus_penalty.py:0
