@@ -83,9 +83,9 @@ class HrBonusPenalty(models.Model):
 		penalty_absence = self.env.ref('egymentors_hr.penalty_absence')
 		penalty_sick = self.env.ref('egymentors_hr.penalty_sick')
 		penalty_unpaid = self.env.ref('egymentors_hr.penalty_unpaid')
-		penalty_spare_part = self.env.ref('egymentors_hr.penalty_spare_part')
-		penalty_expenditure = self.env.ref('egymentors_hr.penalty_expenditure')
-		penalty_impairment = self.env.ref('egymentors_hr.penalty_impairment')
+# 		penalty_spare_part = self.env.ref('egymentors_hr.penalty_spare_part')
+# 		penalty_expenditure = self.env.ref('egymentors_hr.penalty_expenditure')
+# 		penalty_impairment = self.env.ref('egymentors_hr.penalty_impairment')
 		penalty_fixed = self.env.ref('egymentors_hr.penalty_fixed')
 		for rec in self:
 			rec.total_bonuses = sum(l.amount for l in rec.line_ids)
