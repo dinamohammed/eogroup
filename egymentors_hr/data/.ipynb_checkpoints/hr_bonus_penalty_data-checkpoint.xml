@@ -4,7 +4,7 @@
         <!--Bonus Types-->
 
         <!--Allowance Types-->
-        <record forcecreate="True" id="bonus_production" model="hr.bonus.penalty.type">
+<!--         <record forcecreate="True" id="bonus_production" model="hr.bonus.penalty.type">
             <field name="name">Production</field>
             <field name="extra_type">bonus</field>
             <field name="bonus_type">allowance</field>
@@ -23,19 +23,19 @@
             <field name="name">Workshop</field>
             <field name="extra_type">bonus</field>
             <field name="bonus_type">allowance</field>
-        </record>
+        </record> -->
         <!--Reward Types-->
-        <record forcecreate="True" id="bonus_efforts" model="hr.bonus.penalty.type">
+<!--         <record forcecreate="True" id="bonus_efforts" model="hr.bonus.penalty.type">
             <field name="name">Efforts</field>
             <field name="extra_type">bonus</field>
             <field name="bonus_type">rewards</field>
-        </record>
+        </record> -->
         <record forcecreate="True" id="bonus_rewards" model="hr.bonus.penalty.type">
             <field name="name">Rewards</field>
             <field name="extra_type">bonus</field>
             <field name="bonus_type">rewards</field>
         </record>
-        <record forcecreate="True" id="bonus_transportation" model="hr.bonus.penalty.type">
+<!--         <record forcecreate="True" id="bonus_transportation" model="hr.bonus.penalty.type">
             <field name="name">Transportation Allowance</field>
             <field name="extra_type">bonus</field>
             <field name="bonus_type">rewards</field>
@@ -54,12 +54,8 @@
             <field name="name">Feeding</field>
             <field name="extra_type">bonus</field>
             <field name="bonus_type">rewards</field>
-        </record>
+        </record> -->
         <!-- Penalty Types-->
-        <record forcecreate="True" id="penalty_penalty" model="hr.bonus.penalty.type">
-            <field name="name">Late-Day</field>
-            <field name="extra_type">penalty</field>
-        </record>
 <!--         <record forcecreate="True" id="penalty_penalty" model="hr.bonus.penalty.type">
             <field name="name">Penalty</field>
             <field name="extra_type">penalty</field>
@@ -76,6 +72,10 @@
             <field name="name">Sick</field>
             <field name="extra_type">penalty</field>
         </record> -->
+        <record forcecreate="True" id="penalty_penalty" model="hr.bonus.penalty.type">
+            <field name="name">Late-Day</field>
+            <field name="extra_type">penalty</field>
+        </record>
         <record forcecreate="True" id="penalty_unpaid" model="hr.bonus.penalty.type">
             <field name="name">Late-Hours</field>
             <field name="extra_type">penalty</field>

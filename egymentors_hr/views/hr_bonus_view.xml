@@ -86,18 +86,18 @@
                             </field>
                             <group class="oe_right">
                                 <group class="oe_subtotal_footer">
-                                    <field name="total_bonus_production" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'allowance')]}"/>
+<!--                                     <field name="total_bonus_production" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'allowance')]}"/>
                                     <field name="total_bonus_leadership" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'allowance')]}"/>
                                     <field name="total_bonus_workshop" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'allowance')]}"/>
                                     <field name="total_bonus_direction" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'allowance')]}"/>
                                     <field name="total_bonuses_allowance" widget="monetary" class="oe_subtotal_footer_separator" attrs="{'invisible':[('bonus_type', '!=', 'allowance')]}"/>
 
-                                    <field name="total_bonus_efforts" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
+                                    <field name="total_bonus_efforts" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/> -->
                                     <field name="total_bonus_rewards" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
-                                    <field name="total_bonus_transportation" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
+<!--                                     <field name="total_bonus_transportation" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
                                     <field name="total_bonus_travel" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
                                     <field name="total_bonus_additional" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
-                                    <field name="total_bonus_feeding" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
+                                    <field name="total_bonus_feeding" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/> -->
                                     <field name="total_bonuses_rewards" widget="monetary" class="oe_subtotal_footer_separator"
                                            attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
                                     <!--<field name="total_bonuses" widget="monetary" class="oe_subtotal_footer_separator"/>-->

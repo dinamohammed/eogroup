@@ -1638,12 +1638,6 @@ msgstr "الراتب السابق"
 msgid "Print"
 msgstr "طباعه"
 
-#. module: egymentors_hr
-#: model:hr.bonus.penalty.type,name:egymentors_hr.bonus_production
-#: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__total_bonus_production
-#: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_bonus_production
-msgid "Production"
-msgstr "الانتاج"
 
 #. module: egymentors_hr
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_profit
