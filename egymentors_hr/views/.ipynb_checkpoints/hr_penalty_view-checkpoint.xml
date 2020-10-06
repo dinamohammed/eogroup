@@ -63,9 +63,9 @@
                             </field>
                             <group class="oe_right">
                                 <group class="oe_subtotal_footer">
-                                    <field name="total_penalties_penalty" widget="monetary"/>
                                     <field name="total_penalties_absence" widget="monetary"/>
                                     <field name="total_penalties_sick" widget="monetary"/>
+                                    <field name="total_penalties_penalty" widget="monetary"/>
                                     <field name="total_penalty_unpaid" widget="monetary"/>
                                     <field name="total_penalties_other" widget="monetary"/>
 <!--                                     <field name="total_penalty_spare_part" widget="monetary"/>
