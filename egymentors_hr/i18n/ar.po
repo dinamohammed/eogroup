@@ -1471,7 +1471,7 @@ msgstr "الأنواع"
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__total_penalty_unpaid
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_penalty_unpaid
 msgid "Unpaid"
-msgstr "بدون اجر"
+msgstr "تاخير-ساعات"
 
 #. module: egymentors_hr
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__message_unread
