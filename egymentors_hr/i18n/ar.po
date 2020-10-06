@@ -1614,4 +1614,4 @@ msgstr "الإجمال"
 #. module: egymentors_hr
 #: model:hr.bonus.penalty.type,name:egymentors_hr.penalty_unpaid
 msgid "unpaid"
-msgstr "بدون اجر"
+msgstr "تاخير-ساعات"
