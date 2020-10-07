@@ -16,7 +16,7 @@ class HrBonusPenalty(models.Model):
 	                               ('penalty', 'Penalty')], "Type",
 								  readonly=True, states={'draft': [('readonly', False)]})
 	bonus_type = fields.Selection([('rewards', 'Rewards')],
-	                              "Bonus Type", readonly=True, states={'draft': [('readonly', False)]})
+	                              "Bonus Type", readonly=True, states={'draft': [('readonly', False)]} , default = 'rewards')
     #('allowance', 'Allowance'),
 	date = fields.Date("Date", default=fields.Date.today(),
 					   readonly=True, states={'draft': [('readonly', False)]})
@@ -237,7 +237,7 @@ class HrBonusPenaltyType(models.Model):
 	extra_type = fields.Selection([('bonus', 'Bonus'),
 	                               ('penalty', 'Penalty')], "Type")
 	bonus_type = fields.Selection([('rewards', 'Rewards')],
-	                              "Bonus Type")
+	                              "Bonus Type",default = 'rewards')
     #('allowance', 'Allowance'),
 	fixed_amount = fields.Boolean("Fixed Amount",
 	                              help="If selected it will add start and end month ")
