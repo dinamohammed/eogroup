@@ -410,7 +410,7 @@ msgstr "غياب"
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__total_penalties_penalty
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_penalties_penalty
 msgid "Penalty"
-msgstr "جزاء"
+msgstr "تاخير-ايام"
 
 #. module: egymentors_hr
 #: model:hr.bonus.penalty.type,name:egymentors_hr.penalty_other
@@ -1638,12 +1638,6 @@ msgstr "الراتب السابق"
 msgid "Print"
 msgstr "طباعه"
 
-#. module: egymentors_hr
-#: model:hr.bonus.penalty.type,name:egymentors_hr.bonus_production
-#: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__total_bonus_production
-#: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_bonus_production
-msgid "Production"
-msgstr "الانتاج"
 
 #. module: egymentors_hr
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_profit
@@ -1721,7 +1715,7 @@ msgstr "خطأ في استلام رسائل الجوال"
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__total_penalties_sick
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_penalties_sick
 msgid "Sick"
-msgstr "مرضي"
+msgstr "غياب2"
 
 #. module: egymentors_hr
 #: code:addons/egymentors_hr/models/hr_bonus_penalty.py:0
@@ -1880,7 +1874,7 @@ msgstr "الأنواع"
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_bonus_penalty__total_penalty_unpaid
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_payslip__total_penalty_unpaid
 msgid "Unpaid"
-msgstr "بدون اجر"
+msgstr "تاخير-ساعات"
 
 #. module: egymentors_hr
 #: model:ir.model.fields,field_description:egymentors_hr.field_hr_award_profit__message_unread
@@ -2063,7 +2057,7 @@ msgstr "الإجمال"
 #. module: egymentors_hr
 #: model:hr.bonus.penalty.type,name:egymentors_hr.penalty_unpaid
 msgid "unpaid"
-msgstr "بدون اجر"
+msgstr "تاخير-ساعات"
 
 #. module: egymentors_hr
 #: model:ir.actions.report,name:egymentors_hr.payslip_salary_rules_xlsx_report
