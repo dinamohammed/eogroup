@@ -95,9 +95,9 @@ class HrLevel(models.Model):
 class HrEmployee(models.Model):
     _inherit = 'hr.employee'
     
-    location_type = fields.Selection([('static', 'Static'),
-                                      ('dynamic', 'Dynamic'),
-                                      ('management', 'Management')], string="Location Type",
+    location_type = fields.Selection([('static', 'Insured'),
+                                      ('dynamic', 'Outside Insurance'),
+                                      ('management', 'Non')], string="Location Type",
                                      required=True, default='static')
     
     tax_base = fields.Float(string='Tax Base', default=0)
