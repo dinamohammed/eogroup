@@ -110,7 +110,7 @@
         <field name="arch" type="xml">
 
             <xpath expr="//group//group" position="inside">
-                <field name="work_location_id" attrs="{'required':[('all_employees','=', False)]}"/>
+<!--                 <field name="work_location_id" attrs="{'required':[('all_employees','=', False)]}"/> -->
                 <field name="department_id"/>
                 <field name="all_employees"/>
                 <!--
