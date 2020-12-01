@@ -30,7 +30,7 @@
                     </field>
                 </page>
             </xpath>
-            <xpath expr="/form/sheet/notebook/page[@name='public']/div/div/group[2]/field[@name='tax_base']" position="before">
+            <xpath expr="/form/sheet/notebook/page[@name='public']/div/div/group/field[@name='tax_base']" position="before">
                 <field name="previous_wage" readonly="True"/>
             </xpath>
 
