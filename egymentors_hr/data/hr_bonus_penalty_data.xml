@@ -55,6 +55,16 @@
             <field name="extra_type">bonus</field>
             <field name="bonus_type">rewards</field>
         </record>
+        <record forcecreate="True" id="bonus_night_shift" model="hr.bonus.penalty.type">
+            <field name="name">Night Shift</field>
+            <field name="extra_type">bonus</field>
+            <field name="bonus_type">rewards</field>
+        </record>
+        <record forcecreate="True" id="bonus_amount_vpp" model="hr.bonus.penalty.type">
+            <field name="name">Amount VPP</field>
+            <field name="extra_type">bonus</field>
+            <field name="bonus_type">rewards</field>
+        </record>
         <!-- Penalty Types-->
         <record forcecreate="True" id="penalty_penalty" model="hr.bonus.penalty.type">
             <field name="name">Penalty</field>
