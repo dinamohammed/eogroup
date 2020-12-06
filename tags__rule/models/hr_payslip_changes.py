@@ -124,38 +124,38 @@ class HrPayslipInherit(models.Model):
 		payslip_ids = self.env['hr.payslip'].search([('employee_id','in',employee_ids)]).mapped('id')
 		return [('id', 'in', payslip_ids)]
 	
-	    @api.onchange('employee_id', 'struct_id', 'contract_id', 'date_from', 'date_to')
-    def _onchange_employee(self):
-        if (not self.employee_id) or (not self.date_from) or (not self.date_to):
-            return
+	 @api.onchange('employee_id', 'struct_id', 'contract_id', 'date_from', 'date_to')
+	def _onchange_employee(self):
+        	if (not self.employee_id) or (not self.date_from) or (not self.date_to):
+            	return
 
-        employee = self.employee_id
-        date_from = self.date_from
-        date_to = self.date_to
+        	employee = self.employee_id
+        	date_from = self.date_from
+        	date_to = self.date_to
         
-        self.registration_number = employee_id.registartion_number
+        	self.registration_number = employee_id.registartion_number
         
-        self.company_id = employee.company_id
-        if not self.contract_id or self.employee_id != self.contract_id.employee_id: # Add a default contract if not already defined
-            contracts = employee._get_contracts(date_from, date_to)
+        	self.company_id = employee.company_id
+        	if not self.contract_id or self.employee_id != self.contract_id.employee_id: # Add a default contract if not already defined
+            		contracts = employee._get_contracts(date_from, date_to)
 
-            if not contracts or not contracts[0].structure_type_id.default_struct_id:
-                self.contract_id = False
-                self.struct_id = False
-                return
-            self.contract_id = contracts[0]
-            self.struct_id = contracts[0].structure_type_id.default_struct_id
+            	if not contracts or not contracts[0].structure_type_id.default_struct_id:
+                	self.contract_id = False
+                	self.struct_id = False
+                	return
+            	self.contract_id = contracts[0]
+            	self.struct_id = contracts[0].structure_type_id.default_struct_id
 
-        payslip_name = self.struct_id.payslip_name or _('Salary Slip')
-        self.name = '%s - %s - %s' % (payslip_name, self.employee_id.name or '', format_date(self.env, self.date_from, date_format="MMMM y"))
+        	payslip_name = self.struct_id.payslip_name or _('Salary Slip')
+        	self.name = '%s - %s - %s' % (payslip_name, self.employee_id.name or '', format_date(self.env, self.date_from, date_format="MMMM y"))
 
-        if date_to > date_utils.end_of(fields.Date.today(), 'month'):
-            self.warning_message = _("This payslip can be erroneous! Work entries may not be generated for the period from %s to %s." 
-                                     %(date_utils.add(date_utils.end_of(fields.Date.today(), 'month'), days=1), date_to))
-        else:
-            self.warning_message = False
+        	if date_to > date_utils.end_of(fields.Date.today(), 'month'):
+            		self.warning_message = _("This payslip can be erroneous! Work entries may not be generated for the period from %s to %s." 
+                        	             %(date_utils.add(date_utils.end_of(fields.Date.today(), 'month'), days=1), date_to))
+        	else:
+            		self.warning_message = False
 
-        self.worked_days_line_ids = self._get_new_worked_days_lines()
+        	self.worked_days_line_ids = self._get_new_worked_days_lines()
 
 	@api.onchange('registration_number')
 	def employees_data(self):
