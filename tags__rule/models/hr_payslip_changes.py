@@ -15,7 +15,7 @@ class HrPayslipInherit(models.Model):
 	tax_base_temp = fields.Float(string='Tax Base Temp', default=0)
 
 	##### Add Employee's registration Number to Payslip
-	registration_number = fields.Char('Employee Number', groups="hr.group_hr_user", copy=False)
+	registration_number = fields.Char('Employee Number', groups="hr.group_hr_user", copy=False, required=True)
 
 	@api.onchange('registration_number')
 	def employees_data(self):
@@ -133,7 +133,7 @@ class HrPayslipInherit(models.Model):
         	date_from = self.date_from
         	date_to = self.date_to
         
-        	self.registration_number = employee_id.registartion_number
+        	self.registration_number = employee.registration_number
         
         	self.company_id = employee.company_id
         	if not self.contract_id or self.employee_id != self.contract_id.employee_id: # Add a default contract if not already defined
