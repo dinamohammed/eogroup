@@ -139,12 +139,12 @@ class HrPayslipInherit(models.Model):
         	if not self.contract_id or self.employee_id != self.contract_id.employee_id: # Add a default contract if not already defined
             		contracts = employee._get_contracts(date_from, date_to)
 
-            	if not contracts or not contracts[0].structure_type_id.default_struct_id:
-                	self.contract_id = False
-                	self.struct_id = False
-                	return
-            	self.contract_id = contracts[0]
-            	self.struct_id = contracts[0].structure_type_id.default_struct_id
+            		if not contracts or not contracts[0].structure_type_id.default_struct_id:
+                		self.contract_id = False
+                		self.struct_id = False
+                		return
+            		self.contract_id = contracts[0]
+            		self.struct_id = contracts[0].structure_type_id.default_struct_id
 
         	payslip_name = self.struct_id.payslip_name or _('Salary Slip')
         	self.name = '%s - %s - %s' % (payslip_name, self.employee_id.name or '', format_date(self.env, self.date_from, date_format="MMMM y"))
