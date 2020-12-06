@@ -15,6 +15,10 @@
                     <h1><field name="registration_number" placeholder="Employee Number"/></h1>
                 </div>
             </xpath>
+            <xpath expr="//button[@name='compute_sheet']" position="replace">
+                 <button string="Compute Sheet" name="compute_sheet" type="object" states="draft" class="oe_highlight"/>
+            </xpath>
+
             </field>
         </record>
         <record model="ir.ui.view" id="view_hr_payslip_filter_custom">
