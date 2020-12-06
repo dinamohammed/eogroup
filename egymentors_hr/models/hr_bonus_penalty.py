@@ -77,6 +77,9 @@ class HrBonusPenalty(models.Model):
 		bonus_travel = self.env.ref('egymentors_hr.bonus_travel')
 		bonus_additional = self.env.ref('egymentors_hr.bonus_additional')
 		bonus_feeding = self.env.ref('egymentors_hr.bonus_feeding')
+        # suth cust
+        bonus_night_shift = self.env.ref('egymentors_hr.bonus_night_shift')
+		bonus_amount_vpp = self.env.ref('egymentors_hr.bonus_amount_vpp')
 		# Penalty
 		penalty_other = self.env.ref('egymentors_hr.penalty_other')
 		penalty_penalty = self.env.ref('egymentors_hr.penalty_penalty')
@@ -134,6 +137,11 @@ class HrBonusPenalty(models.Model):
 			                                 rec.line_ids.filtered(lambda x: x.type_id == bonus_additional))
 			rec.total_bonus_feeding = sum(l.amount for l in
 			                              rec.line_ids.filtered(lambda x: x.type_id == bonus_feeding))
+            ## Suther
+            rec.total_bonus_night_shift = sum(l.amount for l in
+			                                 rec.line_ids.filtered(lambda x: x.type_id == bonus_night_shift))
+			rec.total_bonus_amount_vpp = sum(l.amount for l in
+			                              rec.line_ids.filtered(lambda x: x.type_id == bonus_amount_vpp))
 			rec.total_bonuses_rewards = sum(l.amount for l in
 			                                rec.line_ids.filtered(lambda x: x.type_id.bonus_type == 'rewards'))
 	
@@ -170,8 +178,11 @@ class HrBonusPenalty(models.Model):
 	total_bonus_transportation = fields.Float("Transportation", compute=_get_total_bonus_penalty)
 	total_bonus_travel = fields.Float("Travel", compute=_get_total_bonus_penalty)
 	total_bonus_additional = fields.Float("Additional", compute=_get_total_bonus_penalty)
-	total_bonus_feeding = fields.Float("Additional", compute=_get_total_bonus_penalty)
-	
+	total_bonus_feeding = fields.Float("Feeding", compute=_get_total_bonus_penalty)
+    # suth
+	total_bonus_night_shift = fields.Float("Night Shift", compute=_get_total_bonus_penalty)
+	total_bonus_amount_vpp = fields.Float("Amount VPP", compute=_get_total_bonus_penalty)
+    
 	total_penalties = fields.Float("Total Penalties", compute=_get_total_bonus_penalty)
 	total_penalties_sick = fields.Float("Sick", compute=_get_total_bonus_penalty)
 	total_penalties_other = fields.Float("Other", compute=_get_total_bonus_penalty)
