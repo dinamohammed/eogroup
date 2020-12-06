@@ -124,7 +124,7 @@ class HrPayslipInherit(models.Model):
 		payslip_ids = self.env['hr.payslip'].search([('employee_id','in',employee_ids)]).mapped('id')
 		return [('id', 'in', payslip_ids)]
 	
-	 @api.onchange('employee_id', 'struct_id', 'contract_id', 'date_from', 'date_to')
+	@api.onchange('employee_id', 'struct_id', 'contract_id', 'date_from', 'date_to')
 	def _onchange_employee(self):
         	if (not self.employee_id) or (not self.date_from) or (not self.date_to):
             	return
