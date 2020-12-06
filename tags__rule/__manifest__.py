@@ -10,7 +10,7 @@
         Long description of module's purpose
     """,
 
-    'author': "My Company",
+    'author': "Mentors - Ahmed Salama",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -20,19 +20,20 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','hr_payroll', 'hr'],
+    'depends': ['hr_payroll', 'hr_contract'],
 
     # always loaded
     'data': [
         'data/hr_level_data.xml',
+        
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        
+        'views/hr_employee_view_changes.xml',
+        'views/hr_payslip_view_changes.xml',
+        'views/hr_contract_view_changes.xml',
         'views/location.xml',
         'views/level.xml',
-        'views/contractType.xml',
-        'views/search.xml',
-        'views/employeestatus.xml',
+        'views/contract_type_view.xml',
     ],
     # only loaded in demonstration mode
 }
