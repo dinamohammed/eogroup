@@ -30,6 +30,9 @@
                             <field name="total_bonus_travel" widget="monetary"/>
                             <field name="total_bonus_additional" widget="monetary"/>
                             <field name="total_bonus_feeding" widget="monetary"/>
+                            <!-- SutherLand -->
+                            <field name="total_bonus_night_shift" widget="monetary"/>
+                            <field name="total_bonus_amount_vpp" widget="monetary"/>
                             <field name="total_bonuses_rewards" widget="monetary" class="oe_subtotal_footer_separator"/>
 
                             <field name="total_bonuses" widget="monetary" class="oe_subtotal_footer_separator"/>
