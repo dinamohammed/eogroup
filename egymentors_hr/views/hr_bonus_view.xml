@@ -98,6 +98,9 @@
                                     <field name="total_bonus_travel" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
                                     <field name="total_bonus_additional" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
                                     <field name="total_bonus_feeding" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
+                                    <!-- SutherLand -->
+                                    <field name="total_bonus_night_shift" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
+                                    <field name="total_bonus_amount_vpp" widget="monetary" attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
                                     <field name="total_bonuses_rewards" widget="monetary" class="oe_subtotal_footer_separator"
                                            attrs="{'invisible':[('bonus_type', '!=', 'rewards')]}"/>
                                     <!--<field name="total_bonuses" widget="monetary" class="oe_subtotal_footer_separator"/>-->
