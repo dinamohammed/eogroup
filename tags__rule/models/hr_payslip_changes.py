@@ -115,9 +115,9 @@ class HrPayslipInherit(models.Model):
 					'res_model': payslip._name,
 					'res_id': payslip.id
 				})
-	employee_no = fields.Char(string='Employee Number', search='_get_search_list')
+	employee_no = fields.Char(string='Employee Number', search='_get_search_list_2')
 	
-	def _get_search_list(self, operator, value):
+	def _get_search_list_2(self, operator, value):
 		if operator == 'like':
 			operator = 'ilike'
 		employee_ids = self.env['hr.employee'].search([('registration_number',operator,value)]).mapped('id')

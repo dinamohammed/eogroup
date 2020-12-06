@@ -30,8 +30,10 @@
                 <xpath expr="/search/field[@name='employee_id']" position="after">
                     <field name="registration_number" />
                 </xpath>
+                <xpath expr="/search/field[@name='employee_id']" position="before">
+                    <field name="employee_no" />
+                </xpath>
             </field>
         </record>
-
     </data>
 </odoo>
