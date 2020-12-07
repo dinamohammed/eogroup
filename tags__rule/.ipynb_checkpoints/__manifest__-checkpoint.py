@@ -10,8 +10,8 @@
         Long description of module's purpose
     """,
 
-    'author': "Mentors - Ahmed Salama",
-    'website': "http://www.yourcompany.com",
+    'author': "Mentors",
+    'website': "http://www.egymentors.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -34,6 +34,7 @@
         'views/location.xml',
         'views/level.xml',
         'views/contract_type_view.xml',
+        'views/status.xml',
     ],
     # only loaded in demonstration mode
 }
