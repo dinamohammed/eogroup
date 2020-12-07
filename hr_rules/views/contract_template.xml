@@ -100,6 +100,7 @@
                                 <field name="health_insurance"/>
                                 <field name="total_basic_allowance"/>
                                 <field name="annual_vpp"/>
+                                <field name="night_shift"/>
                             </group>
                         </group>
                     </page>
