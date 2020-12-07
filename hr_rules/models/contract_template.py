@@ -89,6 +89,7 @@ class HrContractInherit(models.Model):
 	total_basic_allowance = fields.Float(string='Total Basic & Allowances')
 	annual_vpp = fields.Float(string='Annual VPP')
 	health_insurance = fields.Float(string='Health Insurance')
+	night_shift = fields.Float(string='Night Shift')
 
 
 class ContractAllowanceLine(models.Model):
