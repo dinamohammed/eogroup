@@ -17,9 +17,9 @@
                 <xpath expr="/form/sheet/notebook/page[@name='personal_information']/group/group[7]/field[@name='certificate']" position="replace">
                     <field name="certificate_level"/>
                 </xpath>
-<!--                 <xpath expr="//field[@name='address_id']" position="after">
+                <xpath expr="//field[@name='address_id']" position="after">
                     <field name="employee_status_id"/>
-                </xpath> -->
+                </xpath>
                 <xpath expr="/form/sheet/notebook/page[@name='personal_information']/group/group[7]/field[@name='study_school']" position="replace">
                     <field name="grade_level"/>
                 </xpath>
