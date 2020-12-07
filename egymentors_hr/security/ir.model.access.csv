@@ -21,6 +21,7 @@ account_hr_trans_allowance_line_manager,hr_trans_allowance_line_access_full,mode
 account_hr_trans_allowance_line_user,hr_trans_allowance_line_access_limited,model_hr_trans_allowance_line,,1,0,0,0
 account_hr_employee_grade,hr_employee_grade_full,model_hr_employee_grade,hr.group_hr_manager,1,1,1,1
 account_hr_employee_grade_user,hr_employee_grade_limited,model_hr_employee_grade,,1,0,0,0
+account_employee_status,employee_status,model_employee_status,,1,1,1,1
 account_hr_employee_deduction,hr_employee_deduction_full,model_hr_employee_deduction,hr.group_hr_manager,1,1,1,1
 account_hr_employee_deduction_user,hr_employee_deduction_limited,model_hr_employee_deduction,,1,0,0,0
 account_hr_employee_grade_line,hr_employee_grade_line_full,model_hr_employee_grade_line,hr.group_hr_manager,1,1,1,1
@@ -31,3 +32,4 @@ account_hr_award_profit_user,hr_award_profit_access_limited,model_hr_award_profi
 account_hr_award_profit_line_user,hr_award_profit_line_access_limited,model_hr_award_profit_line,,1,0,0,0
 access_hr_salary_rule_parent_manager,hr_hr_salary_rule_parent_manager,model_hr_salary_rule_parent,hr.group_hr_manager,1,1,1,1
 access_hr_salary_rule_parent_user,hr_hr_salary_rule_parent_user,model_hr_salary_rule_parent,,1,0,0,0
+
