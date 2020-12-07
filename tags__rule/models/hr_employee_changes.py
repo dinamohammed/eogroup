@@ -72,7 +72,7 @@ class HrEmployeeInherit(models.Model):
 	medical_insurance_no = fields.Char(string='Medical Insurance No.')
 	medical_location = fields.Char(string='Medical Location')
     
-#     employee_status_id = fields.Many2one('employee.status', 'Employee Status')
+	employee_status_id = fields.Many2one('employee.status', 'Employee Status')
 	
 	# employee_no = fields.Char(string='Employee Registration Number', search='_get_search_list')
 	#
